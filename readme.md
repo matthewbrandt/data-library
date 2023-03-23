@@ -48,7 +48,7 @@ The event core covers the information of what event was triggered, such as which
 As part of the event, additional information can be sent about things related to the event, such as user identity, region and language settings, etc.
 
 ## Global Event Schema
-> **The Event Core and Event Contexts are covered under the Global Event Schema.**
+**The Event Core and Event Contexts are covered under the Global Event Schema.**
 
 The schema is a "contract" that must be upheld and consists of properties and their acceptable values. Each event must adhere to the schema. There are a set of event properties that are non-nullable and some that are dependent on which event was sent. 
 
