@@ -35,7 +35,7 @@ All events and values within are stateless; they neither refer to other events t
 # Specification
 The specification consists of three main parts:
 
-1. Data Library Component & Events
+1. Data Library Components & Events
 <br>
 A component consists of a UX element that is visible in the frontend. The components are grouped as sensibly as possible to avoid a large amount of similar components. Events that are possible on the component are listed as separate unique events.
 
@@ -54,5 +54,9 @@ The schema is a "contract" that must be upheld and consists of properties and th
 
 The event schema stored in this repository covers all possible properties and acceptable values.
 
-## Data Library
+## Data Library Components & Events
 Each component is visible under the relevant directory, e.g. /modal. The possible events are defined individually and have their own individual readme & JSON files (which adhere to the Global Event Schema) but offer examples and more detailed information about each event.
+
+## Event Contexts
+Each Event Context is defined within the /_contexts subdirectory as it's own individual JSON file. 
+> **N.B.**: An event will always be sent with both the Event Core as well as the Event Contexts but depending on which analytics system you are sending the information too, the syntax may need to be adapted.
