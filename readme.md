@@ -55,8 +55,11 @@ The schema is a "contract" that must be upheld and consists of properties and th
 The event schema stored in this repository covers all possible properties and acceptable values.
 
 ## Data Library Components & Events
-Each component is visible under the relevant directory, e.g. /modal. The possible events are defined individually and have their own individual readme & JSON files (which adhere to the Global Event Schema) but offer examples and more detailed information about each event.
+Each component is visible under the relevant components subdirectory, e.g. /components/modal. The possible events are defined individually and have their own individual readme & JSON files (which adhere to the Global Event Schema) but offer examples and more detailed information about each event.
 
 ## Event Contexts
-Each Event Context is defined within the /_contexts subdirectory as it's own individual JSON file. 
+Each Event Context is defined within the /_contexts directory as it's own individual JSON file. 
 > **N.B.**: An event will always be sent with both the Event Core as well as the Event Contexts but depending on which analytics system you are sending the information too, the syntax may need to be adapted.
+
+# Examples
+Concrete examples of various component implementations can be found in the /_examples directory.
