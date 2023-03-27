@@ -1,0 +1,107 @@
+{
+    "trigger" : [
+      "click",
+      "touch",
+      "timer",
+      "scroll",
+      "display"
+    ],
+    "label" : "{{primary label of the element}}",
+    "component" : [
+      "screen",
+      "hyperlink",
+      "button",
+      "selection_control",
+      "card",
+      "notification",
+      "modal",
+      "navigation",
+      "list",
+      "rating",
+      "search",
+      "video"
+    ],
+    "component_event" : [
+      "screen_view",
+      "hyperlink_click",
+      "button_click",
+      "radio_select",
+      "checkbox_select",
+      "switch_select",
+      "slider_adjust",
+      "card_select",
+      "card_flip",
+      "card_state",
+      "notification_display",
+      "notification_dismiss",
+      "notification_select",
+      "modal_display",
+      "modal_dismiss",
+      "modal_select",
+      "navigation_select",
+      "navigation_state",
+      "list_select",
+      "list_state",
+      "search_initiate",
+      "search_filter",
+      "search_result_select",
+      "video_play"
+    ],
+    "non_interaction" : [
+      true,
+      false
+    ],
+    "result" : [
+      "camera",
+      "microphone",
+      "location",
+      "map",
+      "messaging",
+      "navigation",
+      "share",
+      "storage",
+      "telephone",
+      "purchase",
+      "setting"
+    ],
+    "start_state" : [
+      "active",
+      "inactive",
+      "loading",
+      "focus",
+      "error",
+      "warning",
+      "visible",
+      "hidden",
+      "expanded",
+      "collapsed"
+    ],
+    "end_state" : [
+      "active",
+      "inactive",
+      "loading",
+      "focus",
+      "error",
+      "warning",
+      "visible",
+      "hidden",
+      "expanded",
+      "collapsed"
+    ],
+    "media_type" : [
+      "audio",
+      "video"
+    ],
+    "media_interaction_type" : [
+      "play",
+      "pause",
+      "resume",
+      "replay",
+      "fast_forward",
+      "rewind",
+      "slower",
+      "faster",
+      "record"
+    ],
+   "version" : 1.0
+  }
