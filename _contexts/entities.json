@@ -1,0 +1,11 @@
+{
+    "realm" : [
+        "home",
+        "support_functions",
+        "products"
+    ],
+    "services" : [
+        "user_login"
+    ],
+    "pathing" : ["success","failure","continue","exit"]
+}
