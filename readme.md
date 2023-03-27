@@ -35,16 +35,13 @@ All events and values within are stateless; they neither refer to other events t
 # Specification
 The specification consists of three main parts:
 
-1. Data Library Components & Events
-<br>
+**1. Data Library Components & Events**
 A component consists of a UX element that is visible in the frontend. The components are grouped as sensibly as possible to avoid a large amount of similar components. Events that are possible on the component are listed as separate unique events.
 
-2. Event Core
-<br>
+**2. Event Core**
 The event core covers the information of what event was triggered, such as which UX component it was and whether it was triggered by a click or other type of interaction.
 
-3. Event Contexts
-<br>
+**3. Event Contexts**
 As part of the event, additional information can be sent about things related to the event, such as user identity, region and language settings, etc.
 
 ## Global Event Schema
