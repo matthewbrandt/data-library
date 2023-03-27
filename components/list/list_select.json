@@ -1,0 +1,25 @@
+{
+    "trigger" : "click",
+    "label" : "{{title of the list item}}",
+    "component" : "list",
+    "component_event" : "list_select",
+    "non_interaction" : false,
+    "result" : [
+        "camera",
+        "microphone",
+        "location",
+        "map",
+        "messaging",
+        "navigation",
+        "share",
+        "storage",
+        "telephone",
+        "purchase",
+        "setting"
+      ],
+    "start_state" : null,
+    "end_state" : null,
+    "media_type" : null,
+    "media_interaction_type" : null,
+    "version" : 1.0
+}
