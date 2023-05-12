@@ -1,12 +1,12 @@
 {
     "trigger" : [
-        "display",
+        "click",
         "timer"
     ],
-    "label" : "{{title of the notification}}",
-    "component" : "notification",
-    "component_event" : "notification_display",
-    "non_interaction" : true,
+    "label" : "{{title of the modal}}",
+    "component" : "modal",
+    "component_event" : "modal_dismiss",
+    "non_interaction" : [false, true],
     "intent" : "navigation",
     "start_state" : null,
     "end_state" : null,

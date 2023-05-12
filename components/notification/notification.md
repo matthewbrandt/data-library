@@ -9,5 +9,5 @@ When the notification is shown (within view).
 ## Notification Dismiss
 When the notification is hidden from the user, with or without user input.
 
-## Notifcation Select
+## Notification Select
 When the notification is interacted with by the user.

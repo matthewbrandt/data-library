@@ -1,8 +1,8 @@
 {
     "trigger" : "click",
-    "label" : "{{title of the notification}}",
-    "component" : "notification",
-    "component_event" : "notification_select",
+    "label" : "{{title of the modal}}",
+    "component" : "modal",
+    "component_event" : "modal_select",
     "non_interaction" : false,
     "intent" : [
         "camera",

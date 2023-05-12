@@ -3,9 +3,9 @@
         "display",
         "timer"
     ],
-    "label" : "{{title of the notification}}",
-    "component" : "notification",
-    "component_event" : "notification_display",
+    "label" : "{{title of the modal}}",
+    "component" : "modal",
+    "component_event" : "modal_display",
     "non_interaction" : true,
     "intent" : "navigation",
     "start_state" : null,
