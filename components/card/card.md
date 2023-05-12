@@ -1,6 +1,8 @@
 # Data Library Component: Card
 
-A card is ....
+Cards contain content and (potential) actions about a single subject or topic.
+
+**N.B. Interactions within cards themselves are governed by the individual action type (e.g. a toggle will be under the Selection Controls component). Card events only concern interactions with the Card itself.**
 
 # Component Events
 ## Card Select

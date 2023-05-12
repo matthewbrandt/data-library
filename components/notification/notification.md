@@ -1,6 +1,8 @@
 # Data Library Component: Notification
 
-A notification is ....
+Notifications allow users to view and/or select a choice from a variety of alerts or messages. They include elements that are often referred to as “Indicators”, “Helpers”, “Upload Bar” or “Alerts”.
+
+*N.B. The “modal” type component is not considered as Notifications but on its own.*
 
 # Component Events
 ## Notification Display
