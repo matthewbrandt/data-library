@@ -51,7 +51,7 @@
       true,
       false
     ],
-    "result" : [
+    "intent" : [
       "camera",
       "microphone",
       "location",
@@ -103,5 +103,10 @@
       "faster",
       "record"
     ],
+    "search_properties" : {
+      "location" : ["{{input term}}","<empty>",null],
+      "radius" : ["{{integer}}",null],
+      "is_open_now" : [true, false, null]
+    },
    "version" : 1.0
   }

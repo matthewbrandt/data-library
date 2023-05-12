@@ -1,0 +1,7 @@
+{
+    "localisation" : {
+        "translation_key_name" : "{{translation_key}}",
+        "displayed_language" : "{{2-letter ISO 639-1 language code}}",
+        "displayed_region" : "{{2-letter ISO 3166-1 country code}}"
+    }
+}
