@@ -66,7 +66,7 @@ If one of the properties below is not required for an event it must still be sen
 | radio_select | x | x |  |  |  |
 | checkbox_select | x | x |  |  |  |
 | switch_select | x | x |  |  |  |
-| slider_adjust | x | x |  |  |  |
+| slider_adjust |  |  |  |  |  |
 | card_select |  |  |  |  |  |
 | card_flip |  |  |  |  |  |
 | card_state | x | x |  |  |  |
