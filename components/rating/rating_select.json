@@ -1,0 +1,13 @@
+{
+    "trigger" : "click",
+    "label" : "{{value of the rating}}",
+    "component" : "rating",
+    "component_event" : "rating_select",
+    "non_interaction" : false,
+    "intent" : "setting",
+    "start_state" : null,
+    "end_state" : null,
+    "media_type" : null,
+    "media_interaction_type" : null,
+    "version" : 1.0
+}
