@@ -88,7 +88,9 @@ If one of the properties below is not required for an event it must still be sen
 
 **3. Event Contexts**
 
-As part of the event, additional information can be sent about things related to the event, such as user identity, region and language settings, etc.
+As part of the event, additional information can be sent about things related to the event, such as user identity, region and language settings, etc. 
+
+**N.B.** All Event Contexts must be sent with every event - the information within is validated against the schema as part of event processing. Bad values or events will be marked or discarded as necessary.
 
 ## Global Event Schema
 **The Event Core and Event Contexts are covered under the Global Event Schema.**
