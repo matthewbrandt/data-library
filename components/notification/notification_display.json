@@ -8,8 +8,14 @@
     "component_event" : "notification_display",
     "non_interaction" : true,
     "intent" : "navigation",
-    "start_state" : null,
-    "end_state" : null,
+    "start_state" : [
+        "error",
+        "warning"
+      ],
+      "end_state" : [
+        "error",
+        "warning"
+      ],
     "media_type" : null,
     "media_interaction_type" : null,
     "version" : 1.0

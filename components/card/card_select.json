@@ -3,7 +3,7 @@
     "label" : "{{title of the card}}",
     "component" : "card",
     "component_event" : "card_select",
-    "non_interaction" : true,
+    "non_interaction" : false,
     "intent" : [
         "camera",
         "microphone",
