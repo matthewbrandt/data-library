@@ -4,7 +4,7 @@
     "component" : "card",
     "component_event" : "card_select",
     "non_interaction" : true,
-    "result" : [
+    "intent" : [
         "camera",
         "microphone",
         "location",

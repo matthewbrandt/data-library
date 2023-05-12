@@ -4,7 +4,7 @@
     "component" : "button",
     "component_event" : "button_click",
     "non_interaction" : false,
-    "result" : [
+    "intent" : [
         "camera",
         "microphone",
         "location",

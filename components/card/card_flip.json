@@ -8,7 +8,7 @@
     "component" : "card",
     "component_event" : "card_flip",
     "non_interaction" : false,
-    "result" : "navigation",
+    "intent" : "navigation",
     "start_state" : null,
     "end_state" : null,
     "media_type" : null,

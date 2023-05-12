@@ -1,0 +1,19 @@
+{
+    "trigger" : "click",
+    "label" : "{{label of the checkbox}}",
+    "component" : "selection_control",
+    "component_event" : "checkbox_select",
+    "non_interaction" : false,
+    "intent" : "setting",
+    "start_state" : [
+      "active",
+      "inactive"
+    ],
+    "end_state" : [
+      "active",
+      "inactive"
+    ],
+    "media_type" : null,
+    "media_interaction_type" : null,
+    "version" : 1.0
+}

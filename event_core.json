@@ -45,7 +45,8 @@
       "search_initiate",
       "search_result_select",
       "slider_adjust",
-      "switch_select"
+      "switch_select",
+      "input_exit"
     ],
     "non_interaction" : [
       true,
