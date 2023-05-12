@@ -10,6 +10,7 @@
       "button",
       "card",
       "hyperlink",
+      "input",
       "list",
       "media",
       "modal",
@@ -27,6 +28,7 @@
       "card_state",
       "checkbox_select",
       "hyperlink_click",
+      "input_exit",
       "list_select",
       "list_state",
       "list_view",
@@ -45,8 +47,7 @@
       "search_initiate",
       "search_result_select",
       "slider_adjust",
-      "switch_select",
-      "input_exit"
+      "switch_select"
     ],
     "non_interaction" : [
       true,
@@ -76,7 +77,9 @@
       "visible",
       "hidden",
       "expanded",
-      "collapsed"
+      "collapsed",
+      "empty",
+      "filled"
     ],
     "end_state" : [
       "active",
@@ -88,7 +91,9 @@
       "visible",
       "hidden",
       "expanded",
-      "collapsed"
+      "collapsed",
+      "empty",
+      "filled"
     ],
     "media_type" : [
       "audio",
