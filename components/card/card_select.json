@@ -3,8 +3,8 @@
     "label" : "{{title of the card}}",
     "component" : "card",
     "component_event" : "card_select",
-    "non_interaction" : true,
-    "result" : [
+    "non_interaction" : false,
+    "intent" : [
         "camera",
         "microphone",
         "location",
@@ -21,5 +21,6 @@
     "end_state" : null,
     "media_type" : null,
     "media_interaction_type" : null,
+    "search_properties" : null,
     "version" : 1.0
 }

@@ -43,9 +43,54 @@ A component consists of a UX element that is visible in the frontend. The compon
 
 The event core covers the information of what event was triggered, such as which UX component it was and whether it was triggered by a click or other type of interaction.
 
+**Non-Nullable Properties**
+
+The following properties must ALWAYS be sent with a value that is not null:
+
+- action
+- label
+- component
+- component_event
+- non_interaction
+- result
+- version
+
+**Nullable Properties**
+If one of the properties below is not required for an event it must still be sent with a null value (not as a string!)
+
+| | start_state | end_state | search_properties | media_type | media_interaction_type |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| screen_view |  |  |  |  |  |
+| hyperlink_click |  |  |  |  |  |
+| button_click |  |  |  |  |  |
+| radio_select | x | x |  |  |  |
+| checkbox_select | x | x |  |  |  |
+| switch_select | x | x |  |  |  |
+| slider_adjust |  |  |  |  |  |
+| card_select |  |  |  |  |  |
+| card_flip |  |  |  |  |  |
+| card_state | x | x |  |  |  |
+| notification_display |  |  |  |  |  |
+| notification_dismiss |  |  |  |  |  |
+| notification_select |  |  |  |  |  |
+| modal_display |  |  |  |  |  |
+| modal_dismiss |  |  |  |  |  |
+| modal_select |  |  |  |  |  |
+| navigation_select |  |  |  |  |  |
+| navigation_state | x | x |  |  |  |
+| list_select |  |  |  |  |  |
+| list_state | x | x |  |  |  |
+| search_initiate |  |  | x |  |  |
+| search_filter |  |  |  |  |  |
+| search_result_select |  |  |  |  |  |
+| media_interaction |  |  |  | x | x |
+| input_exit | x | x |  |  |  |
+
 **3. Event Contexts**
 
-As part of the event, additional information can be sent about things related to the event, such as user identity, region and language settings, etc.
+As part of the event, additional information can be sent about things related to the event, such as user identity, region and language settings, etc. 
+
+**N.B.** All Event Contexts must be sent with every event - the information within is validated against the schema as part of event processing. Bad values or events will be marked or discarded as necessary.
 
 ## Global Event Schema
 **The Event Core and Event Contexts are covered under the Global Event Schema.**

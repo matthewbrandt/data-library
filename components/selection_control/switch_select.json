@@ -1,0 +1,20 @@
+{
+    "trigger" : "click",
+    "label" : "{{label of the switch}}",
+    "component" : "selection_control",
+    "component_event" : "switch_select",
+    "non_interaction" : false,
+    "intent" : "setting",
+    "start_state" : [
+      "active",
+      "inactive"
+    ],
+    "end_state" : [
+      "active",
+      "inactive"
+    ],
+    "media_type" : null,
+    "media_interaction_type" : null,
+    "search_properties" : null,
+    "version" : 1.0
+}

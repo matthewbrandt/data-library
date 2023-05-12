@@ -10,6 +10,7 @@
       "button",
       "card",
       "hyperlink",
+      "input",
       "list",
       "media",
       "modal",
@@ -27,10 +28,11 @@
       "card_state",
       "checkbox_select",
       "hyperlink_click",
+      "input_exit",
       "list_select",
       "list_state",
       "list_view",
-      "media_play",
+      "media_interaction",
       "modal_dismiss",
       "modal_display",
       "modal_select",
@@ -56,6 +58,7 @@
       "microphone",
       "location",
       "map",
+      "media",
       "messaging",
       "navigation",
       "share",
@@ -74,7 +77,9 @@
       "visible",
       "hidden",
       "expanded",
-      "collapsed"
+      "collapsed",
+      "empty",
+      "filled"
     ],
     "end_state" : [
       "active",
@@ -86,7 +91,9 @@
       "visible",
       "hidden",
       "expanded",
-      "collapsed"
+      "collapsed",
+      "empty",
+      "filled"
     ],
     "media_type" : [
       "audio",

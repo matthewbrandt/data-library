@@ -8,7 +8,7 @@
     "component" : "list",
     "component_event" : "list_state",
     "non_interaction" : false,
-    "result" : "navigation",
+    "intent" : "navigation",
     "start_state" : [
       "active",
       "inactive",
@@ -35,5 +35,6 @@
     ],
     "media_type" : null,
     "media_interaction_type" : null,
+    "search_properties" : null,
     "version" : 1.0
 }

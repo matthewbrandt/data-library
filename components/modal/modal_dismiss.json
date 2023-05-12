@@ -1,17 +1,12 @@
 {
     "trigger" : [
         "click",
-        "timer",
-        "scroll",
-        "display"
+        "timer"
     ],
-    "label" : "{{title of the list}}",
-    "component" : "list",
-    "component_event" : "list_view",
-    "non_interaction" : [
-        true,
-        false
-    ],
+    "label" : "{{title of the modal}}",
+    "component" : "modal",
+    "component_event" : "modal_dismiss",
+    "non_interaction" : [false, true],
     "intent" : "navigation",
     "start_state" : null,
     "end_state" : null,

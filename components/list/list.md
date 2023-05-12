@@ -1,6 +1,6 @@
 # Data Library Component: List
 
-A list is ....
+Lists are collections of items that contain elements within them. The elements can sometimes be interacted with individually as well.
 
 # Component Events
 ## List View

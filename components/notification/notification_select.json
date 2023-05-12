@@ -1,8 +1,8 @@
 {
     "trigger" : "click",
-    "label" : "{{title of the list item}}",
-    "component" : "list",
-    "component_event" : "list_select",
+    "label" : "{{title of the notification}}",
+    "component" : "notification",
+    "component_event" : "notification_select",
     "non_interaction" : false,
     "intent" : [
         "camera",

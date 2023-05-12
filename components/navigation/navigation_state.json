@@ -1,33 +1,17 @@
 {
-    "trigger" : [
-      "click",
-      "timer",
-      "scroll"
-    ],
-    "label" : "{{title of the card}}",
-    "component" : "card",
-    "component_event" : "card_state",
+    "trigger" : "click",
+    "label" : "{{title of the navigation item}}",
+    "component" : "navigation",
+    "component_event" : "navigation_state",
     "non_interaction" : false,
     "intent" : "navigation",
     "start_state" : [
-      "active",
-      "inactive",
-      "loading",
-      "focus",
-      "error",
-      "warning",
       "visible",
       "hidden",
       "expanded",
       "collapsed"
     ],
     "end_state" : [
-      "active",
-      "inactive",
-      "loading",
-      "focus",
-      "error",
-      "warning",
       "visible",
       "hidden",
       "expanded",

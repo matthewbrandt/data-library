@@ -1,8 +1,8 @@
 {
     "trigger" : "click",
-    "label" : "{{destination URL}}",
-    "component" : "hyperlink",
-    "component_event" : "hyperlink_click",
+    "label" : "{{title of the navigation item}}",
+    "component" : "navigation",
+    "component_event" : "navigation_select",
     "non_interaction" : false,
     "intent" : "navigation",
     "start_state" : null,
