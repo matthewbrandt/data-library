@@ -17,5 +17,6 @@
     "end_state" : null,
     "media_type" : null,
     "media_interaction_type" : null,
+    "search_properties" : null,
     "version" : 1.0
 }

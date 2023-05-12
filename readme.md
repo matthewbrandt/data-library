@@ -81,7 +81,7 @@ If one of the properties below is not required for an event it must still be sen
 | list_select |  |  |  |  |  |
 | list_state | x | x |  |  |  |
 | search_initiate |  |  | x |  |  |
-| search_filter | x | x |  |  |  |
+| search_filter |  |  |  |  |  |
 | search_result_select |  |  |  |  |  |
 | media_interaction |  |  |  | x | x |
 | input_exit | x | x |  |  |  |
