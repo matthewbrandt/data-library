@@ -1,0 +1,39 @@
+{
+    "trigger" : [
+      "click",
+      "timer",
+      "scroll"
+    ],
+    "label" : "{{title of the list}}",
+    "component" : "list",
+    "component_event" : "list_state",
+    "non_interaction" : false,
+    "result" : "navigation",
+    "start_state" : [
+      "active",
+      "inactive",
+      "loading",
+      "focus",
+      "error",
+      "warning",
+      "visible",
+      "hidden",
+      "expanded",
+      "collapsed"
+    ],
+    "end_state" : [
+      "active",
+      "inactive",
+      "loading",
+      "focus",
+      "error",
+      "warning",
+      "visible",
+      "hidden",
+      "expanded",
+      "collapsed"
+    ],
+    "media_type" : null,
+    "media_interaction_type" : null,
+    "version" : 1.0
+}

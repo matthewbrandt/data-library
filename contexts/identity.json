@@ -1,0 +1,11 @@
+{
+    "username": "{{unique identifier for the user}}",
+    "user_id": "{{unique identifier for the user}}",
+    "gender" : ["m","f"],
+    "is_biometrics_active": [true, false],
+    "is_registered" : [true, false],
+    "is_logged_in" : [true, false],
+    "is_email_confirmed" : [true, false],
+    "language" : ["en","de","fr","it"],
+    "is_push_active" : [true, false]
+}

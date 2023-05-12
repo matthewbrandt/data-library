@@ -1,0 +1,28 @@
+{
+    "realm_id" : [
+        "001",
+        "002",
+        "003"
+    ],
+    "realm_name" : [
+        "home",
+        "support_functions",
+        "products"
+    ],
+    "service_id" : [
+        "001",
+        "002",
+        "003"
+    ],
+    "service_name" : [
+        "user_login",
+        "password_reset",
+        "checkout"
+    ],
+    "result" : [
+        "success",
+        "failure",
+        "continue",
+        "exit"
+    ]
+}

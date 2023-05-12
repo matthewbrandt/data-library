@@ -1,0 +1,12 @@
+{
+    "partner_id" : "fedex",
+  
+    "objects": [{
+        "id" : "ihdc723dd",
+        "type" : "support_ticket"
+    }],
+    [{
+        "id" : "podn1223sss-fwefefwf",
+        "type" : "order"
+    }] 
+  }

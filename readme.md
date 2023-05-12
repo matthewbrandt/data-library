@@ -5,7 +5,7 @@ The goal of any kind of frontend tracking is to capture behavioural data in a wa
 In order to design such a tracking system, we have to start by understanding what are the behaviours we want to capture, which means understanding the user experience of the service in question.
 
 ## Core Concept
-This concept revolves around a core set of interactions that are possible on different types of UX elements. These given elements are defined as Components in our Data Library and on these elements, certain events are possible, according to our pre-defined specification.
+This concept revolves around a core set of interactions that are possible on different types of UX elements. These given elements are defined as Components in our Data Library and upon these elements, certain interactions (events) are possible, according to our pre-defined specification.
 
 ## Reasons for Doing
 - reduction of efforts in development for tracking specifications, implementing tracking and testing due to the "one-shot" implementation strategy
@@ -61,5 +61,20 @@ Each component is visible under the relevant components subdirectory, e.g. /comp
 Each Event Context is defined within the /_contexts directory as it's own individual JSON file. 
 > **N.B.**: An event will always be sent with both the Event Core as well as the Event Contexts but depending on which analytics system you are sending the information too, the syntax may need to be adapted.
 
-# Examples
-Concrete examples of various component implementations can be found in the /_examples directory.
+# Examples & Values
+Many values within the schemas can be considered as suggestions, with many more properties or values that can be added. Concrete examples of various component implementations can be found in the /_examples directory.
+
+# More Information
+
+## Event Core: `result`
+Many teams struggle to understand how to implement the `result` property. Seen from a user flow perspective, there are only four possible outcomes when interacting with an element on the page: the user continues their journey, their journey is interrupted, they complete or fail a significant milestone. These for values are represented in the schema as `continue`, `exit`, `success` and `failure`. It is up to the teams to decide _how_ to implement this property but the general recommendation is: determine your significant milestones of your product and for those, define what success looks like (this is a necessary step for data modeling later anyhow). A large percentage of events will have the `continue` value by default.
+
+## Event Core: `search_properties`
+Search is possibly one of the more difficult aspects of the Data Library to implement. Since many search modals have various levels of filters and adjustments, the list of properties can become very long, it's recommended to try and standardise the search properties across all implementations of search in your product. For example, if you have a store selling lights and lightbulbs and two different search modules (one for each), it makes sense to have a `wattage` property for both, rather than adding `max_wattage` for lights and `output_wattage` for lightbulbs.
+
+## Contexts: Entities & Business Objects
+Semantically, these two contexts will be the most important for your event data. Without these 2 you might as well just be implementing counters of how often users click buttons! For data modeling further downstream, you need to understand what the button _is_, not only that it's a button. This is where these two contexts come in. 
+
+When implementing the Entities, think about how your product is built. Realms are domains of interest, which can be considered a high-level categorisation of your business sectors. For a B2C SaaS selling furniture, accessories and other services for rental apartments, the main realms may be considered as `products` and `services`. 
+
+For the Business Objects, assess what types of information you are offering on your platform. Obviously in an e-commerce situation you will have a `products` object, but think deeper about what other types of objects you may have such as `order`, `support_case` or `faq_item`. A semantic tagging of your business objects will allow you to more easily and fully model and understand exactly what actions are being taken by your users.
