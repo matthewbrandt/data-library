@@ -1,21 +1,14 @@
 {
     "trigger" : [
-      "click",
+      "select",
+      "display",
       "timer"
     ],
     "label" : "{{search term}}",
     "component" : "search",
     "component_event" : "search_initiate",
-    "non_interaction" : [
-      false, 
-      true
-    ],
-    "intent" : "navigation",
-    "start_state" : null,
-    "end_state" : null,
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : {
+    "intent" : "search",
+    "options" : {
       "location" : ["{{input term}}","<empty>",null],
       "radius" : ["{{integer}}",null],
       "is_open_now" : [true, false, null]

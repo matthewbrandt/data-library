@@ -49,10 +49,6 @@
       "slider_adjust",
       "switch_select"
     ],
-    "non_interaction" : [
-      true,
-      false
-    ],
     "intent" : [
       "camera",
       "microphone",

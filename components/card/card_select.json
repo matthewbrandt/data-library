@@ -1,9 +1,8 @@
 {
-    "trigger" : "click",
+    "trigger" : "select",
     "label" : "{{title of the card}}",
     "component" : "card",
     "component_event" : "card_select",
-    "non_interaction" : false,
     "intent" : [
         "camera",
         "microphone",
@@ -16,11 +15,5 @@
         "telephone",
         "purchase",
         "setting"
-      ],
-    "start_state" : null,
-    "end_state" : null,
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+      ]
 }

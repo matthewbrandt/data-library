@@ -1,13 +1,12 @@
 {
     "trigger" : [
-      "click",
+      "select",
       "timer",
       "scroll"
     ],
     "label" : "{{title of the list}}",
     "component" : "list",
     "component_event" : "list_state",
-    "non_interaction" : false,
     "intent" : "navigation",
     "start_state" : [
       "active",
@@ -32,9 +31,5 @@
       "hidden",
       "expanded",
       "collapsed"
-    ],
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    ]
 }

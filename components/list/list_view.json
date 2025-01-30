@@ -1,6 +1,6 @@
 {
     "trigger" : [
-        "click",
+        "select",
         "timer",
         "scroll",
         "display"
@@ -8,15 +8,5 @@
     "label" : "{{title of the list}}",
     "component" : "list",
     "component_event" : "list_view",
-    "non_interaction" : [
-        true,
-        false
-    ],
-    "intent" : "navigation",
-    "start_state" : null,
-    "end_state" : null,
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    "intent" : "navigation"
 }

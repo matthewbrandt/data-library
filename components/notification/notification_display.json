@@ -6,18 +6,13 @@
     "label" : "{{title of the notification}}",
     "component" : "notification",
     "component_event" : "notification_display",
-    "non_interaction" : true,
     "intent" : "navigation",
     "start_state" : [
         "error",
         "warning"
-      ],
-      "end_state" : [
+    ],
+    "end_state" : [
         "error",
         "warning"
-      ],
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    ]
 }

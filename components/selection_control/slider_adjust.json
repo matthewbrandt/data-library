@@ -1,14 +1,9 @@
 {
-    "trigger" : "click",
+    "trigger" : "select",
     "label" : "{{label of the slider}}",
     "component" : "selection_control",
     "component_event" : "slider_adjust",
-    "non_interaction" : false,
     "intent" : "setting",
-    "start_state" : null,
-    "end_state" : null,
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    "start_state" : 1.0,
+    "end_state" : 1.2
 }

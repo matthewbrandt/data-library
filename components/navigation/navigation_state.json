@@ -1,9 +1,8 @@
 {
-    "trigger" : "click",
+    "trigger" : "select",
     "label" : "{{title of the navigation item}}",
     "component" : "navigation",
     "component_event" : "navigation_state",
-    "non_interaction" : false,
     "intent" : "navigation",
     "start_state" : [
       "visible",
@@ -16,9 +15,5 @@
       "hidden",
       "expanded",
       "collapsed"
-    ],
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    ]
 }

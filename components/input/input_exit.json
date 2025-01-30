@@ -3,7 +3,6 @@
     "label" : "{{title of the input field}}",
     "component" : "input",
     "component_event" : "input_exit",
-    "non_interaction" : false,
     "intent" : "navigation",
     "start_state" : [
         "empty",
@@ -12,9 +11,5 @@
     "end_state" : [
         "empty",
         "filled"
-    ],
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    ]
 }

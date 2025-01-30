@@ -3,12 +3,5 @@
     "label" : "{{title of the screen}}",
     "component" : "screen",
     "component_event" : "screen_view",
-    "non_interaction" : true,
-    "intent" : "navigation",
-    "start_state" : null,
-    "end_state" : null,
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    "intent" : "navigation"
 }

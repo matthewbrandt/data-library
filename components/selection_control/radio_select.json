@@ -1,9 +1,8 @@
 {
-    "trigger" : "click",
+    "trigger" : "select",
     "label" : "{{label of the radio button}}",
     "component" : "selection_control",
     "component_event" : "radio_select",
-    "non_interaction" : false,
     "intent" : "setting",
     "start_state" : [
       "active",
@@ -12,9 +11,5 @@
     "end_state" : [
       "active",
       "inactive"
-    ],
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    ]
 }

@@ -51,22 +51,19 @@ The following properties must ALWAYS be sent with a value that is not null:
 - label
 - component
 - component_event
-- non_interaction
-- result
-- version
 
 **Nullable Properties**
-If one of the properties below is not required for an event it must still be sent with a null value (not as a string!)
+If one of the properties below is not required for an event it does not need to be declared in the event.
 
-| | start_state | end_state | search_properties | media_type | media_interaction_type |
+| | start_state | end_state | options | media_type | media_interaction_type |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | screen_view |  |  |  |  |  |
-| hyperlink_click |  |  |  |  |  |
-| button_click |  |  |  |  |  |
+| hyperlink_select |  |  |  |  |  |
+| button_select |  |  |  |  |  |
 | radio_select | x | x |  |  |  |
 | checkbox_select | x | x |  |  |  |
 | switch_select | x | x |  |  |  |
-| slider_adjust |  |  |  |  |  |
+| slider_adjust | x | x |  |  |  |
 | card_select |  |  |  |  |  |
 | card_flip |  |  |  |  |  |
 | card_state | x | x |  |  |  |
@@ -82,7 +79,7 @@ If one of the properties below is not required for an event it must still be sen
 | list_state | x | x |  |  |  |
 | search_initiate |  |  | x |  |  |
 | search_filter |  |  |  |  |  |
-| search_result_select |  |  |  |  |  |
+| search_result_select |  |  | x |  |  |
 | media_interaction |  |  |  | x | x |
 | input_exit | x | x |  |  |  |
 
@@ -111,15 +108,19 @@ Many values within the schemas can be considered as suggestions, with many more 
 
 # More Information
 
-## Event Core: `result`
-Many teams struggle to understand how to implement the `result` property. Seen from a user flow perspective, there are only four possible outcomes when interacting with an element on the page: the user continues their journey, their journey is interrupted, they complete or fail a significant milestone. These for values are represented in the schema as `continue`, `exit`, `success` and `failure`. It is up to the teams to decide _how_ to implement this property but the general recommendation is: determine your significant milestones of your product and for those, define what success looks like (this is a necessary step for data modeling later anyhow). A large percentage of events will have the `continue` value by default.
+## Event Core: `intent`
+Many teams struggle to understand how to implement the `intent` property. Seen from a user flow perspective, there are only a limited amount of possible outcomes when interacting with an element on the page. These for values are represented in the schema through the values `camera`,`microphone`, `location`, `map`, etc. A large percentage of events will have the `navigation` value by default. This property _can_ be constructed late-join, but it is highly recommended to implement it at the time of collection.
 
-## Event Core: `search_properties`
-Search is possibly one of the more difficult aspects of the Data Library to implement. Since many search modals have various levels of filters and adjustments, the list of properties can become very long, it's recommended to try and standardise the search properties across all implementations of search in your product. For example, if you have a store selling lights and lightbulbs and two different search modules (one for each), it makes sense to have a `wattage` property for both, rather than adding `max_wattage` for lights and `output_wattage` for lightbulbs.
+## Event Core: `options`
+Filtering (search) is possibly one of the more difficult aspects of the Data Library to implement. Since many search modals have various levels of filters and adjustments, the list of properties can become very long, it's recommended to try and standardise the search properties across all implementations of search in your product. For example, if you have a store selling lights and lightbulbs, with two different search modules (one for each), it makes sense to have a `wattage` property for both, rather than adding `max_wattage` for lights and `output_wattage` for lightbulbs.
+
+In addition, the `options` parameter can be used to attach more specific items that don't conform to the event core model, but don't belong inside of it's own schema due to being about the event itself (rather than its meaning).
 
 ## Contexts: Entities & Business Objects
-Semantically, these two contexts will be the most important for your event data. Without these 2 you might as well just be implementing counters of how often users click buttons! For data modeling further downstream, you need to understand what the button _is_, not only that it's a button. This is where these two contexts come in. 
+Semantically, these two contexts will be the most important for your event data. Without these 2 you might as well just be implementing counters of how often users click buttons! For data modeling further downstream, you need to understand what the button _is_, not only that it's a button. This is where these two contexts come in. You can add any additional contexts and properties necessary for your business.
 
-When implementing the Entities, think about how your product is built. Realms are domains of interest, which can be considered a high-level categorisation of your business sectors. For a B2C SaaS selling furniture, accessories and other services for rental apartments, the main realms may be considered as `products` and `services`. 
+### Entities
+When implementing the Entities, think about how your product is built. The classification is based on your operating business model(s) and company type. For a B2C SaaS selling furniture, accessories and other services for rental apartments, the realms may be named `products` and `services`. 
 
+### Business Objects
 For the Business Objects, assess what types of information you are offering on your platform. Obviously in an e-commerce situation you will have a `products` object, but think deeper about what other types of objects you may have such as `order`, `support_case` or `faq_item`. A semantic tagging of your business objects will allow you to more easily and fully model and understand exactly what actions are being taken by your users.

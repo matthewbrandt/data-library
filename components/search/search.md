@@ -7,7 +7,6 @@ A search component is used when information can be filtered or found using a sea
 # Component Events
 ## Search Initiate
 When the triggers a search with any or no filters applied. 
-
 In a text field with instant search, it is recommended to only trigger this event for words with >= 3 letters (for Latin languages).
 
 ## Search Filter

@@ -1,6 +1,6 @@
 {
     "trigger" : [
-      "click",
+      "select",
       "display",
       "scroll",
       "timer"
@@ -8,13 +8,7 @@
     "label" : "{{title of the media element}}",
     "component" : "media",
     "component_event" : "media_interaction",
-    "non_interaction" : [
-      true,
-      false
-    ],
     "intent" : "media",
-    "start_state" : null,
-    "end_state" : null,
     "media_type" : [
       "audio",
       "video"
@@ -29,7 +23,5 @@
       "slower",
       "faster",
       "record"
-    ],
-    "search_properties" : null,
-   "version" : 1.0
+    ]
   }

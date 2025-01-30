@@ -1,14 +1,25 @@
 {
     "trigger" : [
-      "click",
+      "select",
       "timer",
       "scroll"
     ],
     "label" : "{{title of the card}}",
     "component" : "card",
     "component_event" : "card_state",
-    "non_interaction" : false,
-    "intent" : "navigation",
+    "intent" : [
+        "camera",
+        "microphone",
+        "location",
+        "map",
+        "messaging",
+        "navigation",
+        "share",
+        "storage",
+        "telephone",
+        "purchase",
+        "setting"
+    ],
     "start_state" : [
       "active",
       "inactive",
@@ -32,9 +43,5 @@
       "hidden",
       "expanded",
       "collapsed"
-    ],
-    "media_type" : null,
-    "media_interaction_type" : null,
-    "search_properties" : null,
-    "version" : 1.0
+    ]
 }

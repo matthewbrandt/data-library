@@ -7,22 +7,19 @@
     "realm_name" : [
         "home",
         "support_functions",
-        "products"
+        "products",
+        "services"
     ],
     "service_id" : [
         "001",
         "002",
-        "003"
+        "003",
+        "004"
     ],
     "service_name" : [
+        "home",
         "user_login",
         "password_reset",
-        "checkout"
-    ],
-    "result" : [
-        "success",
-        "failure",
-        "continue",
-        "exit"
+        "shopping_cart"
     ]
 }

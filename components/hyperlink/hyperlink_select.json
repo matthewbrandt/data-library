@@ -1,12 +1,8 @@
 {
-    "trigger" : [
-      "select",
-      "scroll",
-      "timer"
-    ],
-    "label" : "{{title of the card}}",
-    "component" : "card",
-    "component_event" : "card_flip",
+    "trigger" : "select",
+    "label" : "{{destination URL}}",
+    "component" : "hyperlink",
+    "component_event" : "hyperlink_click",
     "intent" : [
         "camera",
         "microphone",
