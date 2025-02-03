@@ -2,7 +2,7 @@
     "trigger" : "select",
     "label" : "{{destination URL}}",
     "component" : "hyperlink",
-    "component_event" : "hyperlink_click",
+    "component_event" : "hyperlink_select",
     "intent" : [
         "camera",
         "microphone",
